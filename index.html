@@ -3,49 +3,83 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spence Berg</title>
+    <title>Spencer Berg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            M.AutoInit();
+            $('.parallax').parallax();
+
+            $(".modal-trigger").on("click", (event) => {
+                event.preventDefault();
+                $("#modal").modal();
+            })
+        });
+    </script>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">spencer</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                  </div>
-                </div>
-              </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- add photo -->
-                <img src="https://static01.nyt.com/images/2011/05/21/sports/SAVAGE1-obit/SAVAGE1-obit-popup.jpg" alt="Ohhhhyea">
-                
-            </div>
-            <div class="col-md-6">
-                <!-- add loramipsum -->
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur elit quis eros laoreet vehicula.
-                        In ornare justo vel augue commodo feugiat. Curabitur faucibus, justo auctor lobortis consequat, turpis nibh bibendum quam,
-                         eu dictum arcu massa in ante. Nullam quis purus a ipsum mollis maximus at eget metus. Maecenas maximus iaculis risus vita
-                         e mollis. Phasellus elit felis, pretium cursus lacinia at, aliquam eu nunc. Integer feugiat interdum gravida. Curabitur non 
-                         ligula ut massa congue consequat non et nunc. Suspendisse et turpis nibh. Proin non nunc vel justo gravida malesuada ac at odio.
-   
-                           Quisque vel tincidunt orci, gravida suscipit magna. Proin maximus volutpat dictum. Duis semper eros lectus, non rutrum nequ
-                           e ultrices eget. Etiam fermentum urna odio, vitae ultrices ante consectetur in. Vivamus nec eros in ipsum condimentum aliquam. 
-                           Pellentesque luctus tristique velit, nec vulputate magna rhoncus egestas. Vestibulum neque eros, semper ut ante a, posuere ornare leo.
-                            Etiam non tellus suscipit ligula imperdiet pellentesque. Mauris porta lectus sed neque lobortis, id bibendum nisl facilisis.
-                             Nunc sollicitudin metus elit, non pretium velit maximus iaculis. Duis consequat lectus ac risus faucibus, ut iaculis urna pharetra.
-                              Cras sit amet arcu eget nibh facilisis faucibus euismod nec risus. Nullam imperdiet augue leo.</p>
+    <nav class="#03a9f4 light-blue">
+
+        <div class="nav-wrapper">
+            <a href="/" id="name" class="brand-logo center">Spencer Berg</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="modal-trigger" href="#modal">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <h4>Contact</h4>
+                <ul id="contact-buttons">
+                    <li><a href="https://www.linkedin.com/in/spencer-berg-ab5210123/" class="waves-effect contact waves-light btn-large"><i class="material-icons left">person</i>LinkedIn</a></li>
+                    <li><a href="https://github.com/sbd367?tab=repositories" class="waves-effect contact waves-light btn-large"><i class="material-icons left">code</i>Github</a></li>
+                </ul>
             </div>
         </div>
+        
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
     </div>
+
+    <div id="highParra" class="parallax-container">
+        <div class="parallax"><img src="http://i.imgur.com/K8nFCrQ.jpg"></div>
+    </div>
+
+<div class="container">
+    <div class="section white">
+                <!-- add photo -->
+        <div class="row">
+            <div class="col s8">
+                <h5 class="text">   I'm an Entry level, full stack developer with experience creating everything from simple HTML/CSS style sheets to full stack Applications.</h5>
+                <h5 id="lower"> My diverse background across a wide range of problem sets allows me to approach issues in a pragmatic and all-encompassing way. </h5>
+            </div>
+        </div>    
+    </div>
+</div>
+   
+    <div id="lowParra" class="parallax-container">
+        <div class="parallax"><img src="./photo/react.JPG"></div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

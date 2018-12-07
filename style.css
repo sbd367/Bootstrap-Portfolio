@@ -3,9 +3,48 @@
     margin-top: 20px;
 
 }
+
+.contact{
+    position: relative;
+    left: 15vw;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+}
+
 img{
     margin-top: 20px;
 }
+#name{
+    font-family: 'Oswald', sans-serif;
+}
 .text{
     margin-top: 25px;
+}
+p{
+    font-size: 30px;
+    font-family: 'Crimson Text', serif;
+}
+h5{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    position: relative;
+    text-indent: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+h2{
+    font-family: 'Lora', serif;
+}
+.parallax-container{
+    height: 50vh;
+}
+#lowParra{
+    height: 30vh;
+}
+#homePhoto{
+    height: 23rem;
+    position: relative;
+    right: 5rem;
+}
+.btn-large{
+    width: 12rem;
 }
