@@ -4,30 +4,65 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
+
+    <!-- setup refs -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
+
+    <!-- materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body style="background: grey;">
   <div class="container">
-      <div class="col m6">
-          <h2 class="header">React Memory Game</h2>
-          <div class="card horizontal">
-            <div class="card-image">
-              <img id="cardImage" src="./photo/react.JPG">
+
+    <div class="col m6">
+        <h2 class="header">Settle-It</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="./photo//settleit.JPG">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Full-stack application that allows users to create accounts and vote on different topics</h4>
+              <p>
+                Demonstrates a MERN full-stack application, use of session/user validation with Passport.js, and sequelize ORM   
+              </p>
             </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>A simple memory game where you try to avoid clicking the same image twice. Images are randomized every click.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://reactclickygame1.herokuapp.com/">heroku app</a><a href="https://github.com/sbd367/clickGame">Github Repo</a>
-              </div>
+            <div class="card-action">
+              <a href="https://settle-it.herokuapp.com/">heroku app</a><a href="https://github.com/mnelson13/Settle-It">Github Repo</a>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="col m6">
+
+        <h2 class="header">React Memory Game</h2>
+
+        <div class="card horizontal">
+
+          <div class="card-image">
+            <img id="cardImage" src="./photo/react.JPG">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>A simple memory game where you try to avoid clicking the same image twice.</h4>
+              <p>
+                 Shows basic client-side React development with use of passing props to components, changing smart components state,
+                 then displaying/manipulating content within a smart Wrapper function.
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a href="https://reactclickygame1.herokuapp.com/">heroku app</a><a href="https://github.com/sbd367/clickGame">Github Repo</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
         <div class="col m6">
             <h2 class="header">Train Scheduler</h2>
@@ -37,7 +72,10 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>A mock Train scheduler app that allows you to add trains to Firebase storage.</p>
+                  <h4>A mock Train scheduler app that allows you to add trains to Firebase storage.</h4>
+                  <p>
+                    Demonstrates basic data storage and manipulation via API querys to Firebase. Also shows the use of Moment.js for local time management. 
+                  </p>
                 </div>
                 <div class="card-action">
                   <a href="https://sbd367.github.io/TrainScheduler/">Github Pages</a><a href="https://github.com/sbd367/TrainScheduler">Github Repo</a>
@@ -54,7 +92,10 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>A simple app that allows you to crate buger names and devoure or delete them. Uses SQL with sequelize ORM</p>
+                  <h4>A simple app that allows you to crate buger names and devoure or delete them.</h4>
+                  <p>
+                    Demonstrates a full stack MERN application, uses SQL and and mySQL ORM to manipulate data. Also shows use of Handlebars.js to dynamically display content. 
+                  </p>
                 </div>
                 <div class="card-action">
                   <a href="https://bobs-burgerss.herokuapp.com/">heroku app</a><a href="https://github.com/sbd367/burger">Github Repo</a>
@@ -71,7 +112,10 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>Simple React App that scrapes and saves current midwest news.</p>
+                  <h4>Simple React App that scrapes and saves current midwest news.</h4>
+                  <p>
+                    Demonstrates a MERN full-stack React application. Uses MCV development style with mongoDB on the backend.  
+                  </p>
                 </div>
                 <div class="card-action">
                   <a href="https://react-news-scraper1.herokuapp.com/">heroku app</a><a href="https://github.com/sbd367/ReactScrape">Github Repo</a>
@@ -80,7 +124,6 @@
             </div>
           </div>
 
-<<<<<<< HEAD
           <div class="col m6">
             <h2 class="header">Trivia Game</h2>
             <div class="card horizontal">
@@ -89,30 +132,15 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>vanilla javascript automotive trivia app</p>
+                  <h4>vanilla javascript automotive trivia app</h4>
+                  <p>
+                    Demonstrates core javascript concepts. DOM is manipulated with use of jQuery.
+                  </p>
                 </div>
                 <div class="card-action">
                   <a href="https://sbd367.github.io/TriviaGame/">Github Pages</a><a href="https://github.com/sbd367/TriviaGame">Github Repo</a>
                 </div>
               </div>
-=======
-                        <div class="card" style="width: 18rem;">
-                          <div class="card-body">
-                            <h5 class="card-title">Burger Devoure with handlebars</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Handlebars</h6>
-                            <a href="https://bobs-burgerss.herokuapp.com/" class="card-link">Go</a>
-                          </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                          <div class="card-body">
-                            <h5 class="card-title">friend finder</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Express</h6>
-                            <a href="https://friend-finder79.herokuapp.com/" class="card-link">Go</a>
-                          </div>
-                        </div>
-
->>>>>>> 74d7358a5602cf3f941b247aae7c4deb60d00ed0
             </div>
           </div>
   </div>
