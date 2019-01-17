@@ -1,0 +1,49 @@
+.push{
+    position: relative;
+    top: 15vh;
+}
+.carousel{
+    border-radius: 15px;
+    opacity: .95;
+}
+
+.one{
+    background-image: url(./photo/settleit.JPG);
+    background-position: center top;
+}
+a{
+    top: 15vh;
+}
+.one-kyle{
+    position: relative;
+    background-color: white;
+    top: 8.5vh;
+}
+.two{
+    background-image: url(./photo/burgers.JPG);
+    background-position: top right;
+}
+.two-kyle{
+    background-color: white;
+    padding-left: 2vw;
+}
+
+.three{
+    background-image: url(./photo/news.JPG);
+}
+.three-kyle{
+    background-color: white;
+    position: relative;
+    top: 12vh;
+}
+.four{
+    background-image: url(./photo/train.JPG);
+    background-position: center top;
+}
+.four-kykle{
+    background-color: white;
+}
+body{
+    background-image: url(http://i.imgur.com/K8nFCrQ.jpg);
+    background-size: 100%;
+}

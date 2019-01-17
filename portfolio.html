@@ -7,17 +7,57 @@
 
     <!-- setup refs -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
     <script src="main.js"></script>
+
+    <!-- jquery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 
     <!-- materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head>
-<body style="background: grey;">
-  <div class="container">
 
-    <div class="col m6">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Portfolio.css" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="push">
+      <div class="carousel carousel-slider center">
+          
+          <div class="carousel-item blue-text one" href="#one!">
+            <h4 target="_blank" class="blue-text one-kyle">A web application where you post an issue and describe why you support or do not support your issue. You then invite a user of the app to respond or vote on your issue.</h4>
+            <a href="https://settle-it.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
+            <a href="https://github.com/mnelson13/Settle-It" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+          </div>
+          <div class="carousel-item white-text two" href="#two!">
+            <h4 class="blue-text two-kyle">Demonstrates a full stack MERN application, uses SQL and mySQL ORM to manipulate data. Also shows use of Handlebars.js to dynamically display content.</h4>
+            <a href="https://bobs-burgerss.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
+            <a href="https://github.com/sbd367/burger" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+          </div>
+          <div class="carousel-item white-text three" href="#three!">
+            <h4 class="black-text three-kyle">Demonstrates a MERN full-stack React application. Uses MCV development style with mongoDB on the backend.</h4>
+            <a href="https://react-news-scraper1.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
+            <a href="https://github.com/sbd367/ReactScrape" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+          </div>
+          <div class="carousel-item four white-text" href="#four!">
+            <h4 data-four="" class="blue-text four-kyle">Demonstrates basic data storage and manipulation via API querys to Firebase. Also shows the use of Moment.js for local time management.</h4>
+            <a href="https://sbd367.github.io/TrainScheduler/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Github App</a>
+            <a href="https://github.com/sbd367/TrainScheduler" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a> 
+          </div>
+        </div>
+      </div> 
+        <script>
+         $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+          });
+        </script>
+
+    <!-- <div class="col m6">
         <h2 class="header">Settle-It</h2>
         <div class="card horizontal">
           <div class="card-image">
@@ -142,7 +182,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
   </div>
 </body>
 </html>
