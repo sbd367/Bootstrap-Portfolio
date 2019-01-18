@@ -8,7 +8,7 @@
     <!-- setup refs -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 
     <!-- jquery CDN -->
     <script
@@ -19,8 +19,9 @@
     <!-- materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./Portfolio.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/Portfolio.css" />
 
 </head>
 <body>
@@ -30,30 +31,50 @@
           
           <div class="carousel-item blue-text one" href="#one!">
             <h4 target="_blank" class="blue-text one-kyle">A web application where you post an issue and describe why you support or do not support your issue. You then invite a user of the app to respond or vote on your issue.</h4>
-            <a href="https://settle-it.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
-            <a href="https://github.com/mnelson13/Settle-It" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+            <a class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            <a class="left btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_back</i></a>
+            <a href="https://settle-it.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text settle darken-text-2">Heroku App</a>
+            <a href="https://github.com/mnelson13/Settle-It" target="_blank" class="btn github waves-effect white grey-text settle darken-text-2">Github Repo</a>
           </div>
           <div class="carousel-item white-text two" href="#two!">
             <h4 class="blue-text two-kyle">Demonstrates a full stack MERN application, uses SQL and mySQL ORM to manipulate data. Also shows use of Handlebars.js to dynamically display content.</h4>
-            <a href="https://bobs-burgerss.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
-            <a href="https://github.com/sbd367/burger" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+            <a class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            <a class="left btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_back</i></a>
+            <a href="https://bobs-burgerss.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text burgers darken-text-2">Heroku App</a>
+            <a href="https://github.com/sbd367/burger" target="_blank" class="btn github waves-effect white grey-text burgers darken-text-2">Github Repo</a>
           </div>
           <div class="carousel-item white-text three" href="#three!">
             <h4 class="black-text three-kyle">Demonstrates a MERN full-stack React application. Uses MCV development style with mongoDB on the backend.</h4>
-            <a href="https://react-news-scraper1.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Heroku App</a>
-            <a href="https://github.com/sbd367/ReactScrape" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a>
+            <a class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            <a class="left btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_back</i></a>
+            <a href="https://react-news-scraper1.herokuapp.com/" target="_blank" class="btn heroku waves-effect white grey-text news darken-text-2">Heroku App</a>
+            <a href="https://github.com/sbd367/ReactScrape" target="_blank" class="btn github waves-effect white grey-text news darken-text-2">Github Repo</a>
           </div>
           <div class="carousel-item four white-text" href="#four!">
-            <h4 data-four="" class="blue-text four-kyle">Demonstrates basic data storage and manipulation via API querys to Firebase. Also shows the use of Moment.js for local time management.</h4>
-            <a href="https://sbd367.github.io/TrainScheduler/" target="_blank" class="btn heroku waves-effect white grey-text darken-text-2">Github App</a>
-            <a href="https://github.com/sbd367/TrainScheduler" target="_blank" class="btn github waves-effect white grey-text darken-text-2">Github Repo</a> 
+            <h4 class="blue-text four-kyle">Demonstrates basic data storage and manipulation via API querys to Firebase. Also shows the use of Moment.js for local time management.</h4>
+            <a class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            <a class="left btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_back</i></a>
+            <a href="https://sbd367.github.io/TrainScheduler/" target="_blank" class="btn heroku waves-effect white grey-text trainB darken-text-2">Github App</a>
+            <a href="https://github.com/sbd367/TrainScheduler" target="_blank" class="btn github waves-effect white grey-text trainB darken-text-2">Github Repo</a> 
           </div>
         </div>
       </div> 
-        <script>
+        <script type="text/javascript">
          $('.carousel.carousel-slider').carousel({
             fullWidth: true,
             indicators: true
+          });
+
+          $('.right').on('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            $('.carousel').carousel('next')
+          });
+
+          $('.left').on('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            $('.carousel').carousel('prev')
           });
         </script>
 

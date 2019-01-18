@@ -8,7 +8,7 @@
 }
 
 .one{
-    background-image: url(./photo/settleit.JPG);
+    background-image: url(../photo/settleit.JPG);
     background-position: center top;
 }
 a{
@@ -20,7 +20,7 @@ a{
     top: 8.5vh;
 }
 .two{
-    background-image: url(./photo/burgers.JPG);
+    background-image: url(../photo/burgers.JPG);
     background-position: top right;
 }
 .two-kyle{
@@ -29,7 +29,7 @@ a{
 }
 
 .three{
-    background-image: url(./photo/news.JPG);
+    background-image: url(../photo/news.JPG);
 }
 .three-kyle{
     background-color: white;
@@ -37,11 +37,37 @@ a{
     top: 12vh;
 }
 .four{
-    background-image: url(./photo/train.JPG);
+    background-image: url(../photo/train.JPG);
     background-position: center top;
 }
 .four-kykle{
     background-color: white;
+}
+.trainB{
+    position: relative;
+    top: 14rem;
+}
+.burgers{
+    position: relative;
+    top: 14rem;
+}
+.settle{
+    position: relative;
+    top: 11rem;
+}
+.news{
+    position: relative;
+    top: 14rem;
+}
+.left{
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+}
+.right{
+    position: absolute;
+    top: 13rem;
+    left: 80rem;
 }
 body{
     background-image: url(http://i.imgur.com/K8nFCrQ.jpg);
